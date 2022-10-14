@@ -66,7 +66,6 @@ body{
 
 #listasumario{
     list-style-type: none;
-    margin: 5px;
 }
 
 #content{
@@ -76,6 +75,12 @@ body{
     flex-direction: column;
     text-align: center;
 }
+
+.listbarreiras{
+    text-align: left;
+    color: red;
+}
+
 
 a{
     text-align: left;
@@ -96,6 +101,6 @@ img{
     margin: 10px;
 }
 
-h3{
+h4{
     text-align: left;
 }

@@ -11,13 +11,13 @@
     <head>
         <nav id="nav">
             <div>
-                <h1 id="name">Tipos de Acessibilidade</h1>
+                <h1 id="name" class="navp">Tipos de Acessibilidade</h1>
             </div>
             <ul id="listanav">
-                <li>Perspectiva de uma pessoa com TDAH</li>
-                <li>Perspectiva de um Deficiente Intelectual</li>
-                <li>Perspectiva de um Deficientes Visual</li>
-                <li>Perspectiva de um pessoa com Daltonismo</li>
+                <li><p class="navp">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
+                <li><p class="navp">Perspectiva de um pessoa com Daltonismo</p></li>
             </ul>
         </nav>
     </head>
@@ -25,25 +25,25 @@
     <hr>
     <div id="corpo">
         <div id="sumario">
-            <h3>Sumário</h3>
+            <h4>Sumário</h4>
             <ul id="listasumario">
                 <li>
-                    <a href="#introdução">Introdução</a>
+                    <h5><a href="#introdução">Introdução</a><h5>
                 </li>
                 <li>
-                    teste2
+                    <h5><a href="#barreiras">Barreiras para um site acessivel</a></h5>
                 </li>
             </ul>
             <p>
         </div>
         <div id="content">
             <h2 id="introdução">Introdução</h2>
-            <p class="firstp">Você já tentou acessar o seu navegador sem utilizar o seu mouse ? ou já tentou acessar com seus olhos fechados ? Eu tenho certeza que se você respondeu sim, você muito provavelmente
+            <p class="firstp paragrafo">Você já tentou acessar o seu navegador sem utilizar o seu mouse ? ou já tentou acessar com seus olhos fechados ? Eu tenho certeza que se você respondeu sim, você muito provavelmente
                 não consegui e voltou a navegar normalmente como se nada tivesse ocorrido, mas você já pensou que existem pessoas que não tem essa opção e que também precisam e tem
                 o direito de navegar pela internet também. 
             </P>
             <br>
-            <p>
+            <p class="paragrafo">
                 Você deve estar pensando para sí mesmo, que o grupo de pessoas que possuem tais dificuldades são poucas, mas pelo contrário segundo o censo do IBGE de 2010, há 
                 aproximadamente 45 milhões de pessoas que apresentam pelo menos uma das deficiências listadas do cabeçalho, esse número representa 23,9% da população, a internet
                 deve ser de uso para todos os tipos dos usuários independente da situação de cada uma tenha ela uma deficiente motoroa, uma pessoa idosa, ou um jovem que tenha costume
@@ -54,28 +54,67 @@
             <a href="#sumario">Retornar ao sumário</a>
             <br>
             <h2 id="barreiras">Quais sãos as barreiras para um site acessivel ?</h2>
-            <p>Ao utilizarem a Web e seus recursos, as pessoas com deficiência deparam-se com barreiras que dificultam e, muitas vezes, impossibilitam seu acesso. Para pensarmos em 
+            <p class="firstp paragrafo">Ao utilizarem a Web e seus recursos, as pessoas com deficiência deparam-se com barreiras que dificultam e, muitas vezes, impossibilitam seu acesso. Para pensarmos em 
                 uma Web acessível, é preciso conhecermos com quais dificuldades estamos lidando e quais são as barreiras que precisamos enfrentar, dessa meneira vamos analisar 
                 separadamente essas dificuldades para entedermos melhor cada uma.
             </p>
+            <a href="#sumario">Retornar ao sumário</a>
             <br>
-            <h4 id="visão">Cegueira e Baixa visão</h4>
-            <p class="firstp">A cegueira representa a ausência total de resposta visual, podendo ser congênita, para terem acesso ao meio digital, as pessoas cegas geralmente utilizam softwares 
+            <h3 id="visão">Cegueira e Baixa visão</h3>
+            <p class="firstp paragrafo">A cegueira representa a ausência total de resposta visual, podendo ser congênita, para terem acesso ao meio digital, as pessoas cegas geralmente utilizam softwares 
                 leitores de tela e navegam utilizando o teclado.
             </p><br><br>
-            <p>Já a baixa visão é o comprometimento do funcionamento visual em ambos os olhos mesmo após 
+            <p class="paragrafo">Já a baixa visão é o comprometimento do funcionamento visual em ambos os olhos mesmo após 
                 correção com uso de óculos ou lentes de contato Dentre o grupo de pessoas com baixa visão há variações: alguns conseguem ler se o impresso for grande ou se estiver 
                 próximo a seus olhos (ou mesmo por meio de lentes de aumento no caso da web utilizam ampliadores de tela), outros conseguem apenas detectar grandes formas, cores ou 
                 contrastes. 
             </p><br><br>
-            <p>
+            <p class="paragrafo">
                 Pessoas com essas dificuldades, sem dúvidas, são as mais afetadas pelo pelo fato de a Web ser um espaço com um forte apelo visual, muitos sites utilizam imagens ou vídeos
                 para transmitir informações principais de um tópico sem passar nenhum tipo de legenda ou alternativa textual ou sonora e essa pessoa não é capaz de acessar o conteúdo
                 transmitido.
             </p><br>
             <a href="visao.html">Ver mais sobre acessibilidade para Cegueira e Baixa Visão</a>
             <a href="#sumario">Retornar ao sumário</a>
+            <br>
+            <h3 id="daltonismo">Daltonismo</h3>
+            <p class="firstp paragrafo">
+                O daltonismo é uma perturbação da percepção visual caracterizada pela incapacidade de diferenciar 
+                cores, o tipo de daltonismo mais comum é a dificuldade de distinguir tons de vermelho e 
+                verde, ainda existe um tipo de daltonismo que não é capaz de visualizar nenhuma cor, vendo apenas
+                preto, branco e tons de cinza.
+            </p><br><br>
+            <p class="paragrafo">
+                Pessoas com essas dificuldades, são pouco afetadas e a principal dificuldade aparece, apenas quando
+                se utiliza de recursos de cor para diferenciar e destacar pontos importantes.
+            </p><br>
+            <img src="imagens/Daltonismo.jpg" height="50%" width="60%" alt="A esquerda uma floresta com tons verdes
+            que representa a visão de cor normal, a direita uma floresta de tons avermelhada que representa a visão de com
+            daltonismo">
+            <a href="daltonismo.html">Ver mais sobre acessibilidade para Daltonismo</a>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h3 id="tdah">TDAH</h3>
+            <p class="firstp paragrafo">
+                O Transtorno de deficiet de atenção, também conhecido popularmente como TDAH é 
+                uma síndrome caracterizada por desatenção, hiperatividade e impulsividade. Em geral, o TDAH começa na infância 
+                e pode persistir na vida adulta.
+            </p><br><br>
+            <p class="paragrafo">
+                A maior dificuldade para as pessaos que possuem TDAH é que muitas vezes existe algo mais chamativo do
+                que o conteúdo principal do site, o que acaba desviando a leitura, além disso muitas vezes a falta de
+                linearidade do site ou a necessita de buscar uma explicação externa para um termo faz com que o foco
+                de uma pessoa com esse transtorno se desvie o que a atrapalha de terminar sua leitura.
+            </p><br>
+            <img src="imagens/tdah.jpg" height="50%" width="60%" alt="Mulher trabalhando em seu computador, em sua cabeça
+            ela pensa em diversas coisas, menos sobre o trabalho"><br>
+            <a href="tdah.html">Ver mais sobre acessibilidade TDAH</a>
+            <a href="#sumario">Retornar ao sumário</a>
         </div>
     </div>
+    <script>
+        function visao(){
+            location.href = "visao.html";
+        }
+    </script>
 </body>
 </html>
