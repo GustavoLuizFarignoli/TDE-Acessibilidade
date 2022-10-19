@@ -14,10 +14,10 @@
                 <h1 id="name" class="navp">Tipos de Acessibilidade</h1>
             </div>
             <ul id="listanav">
-                <li><p class="navp">Perspectiva de uma pessoa com TDAH</p></li>
-                <li><p class="navp">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="tdah()()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
                 <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
-                <li><p class="navp">Perspectiva de um pessoa com Daltonismo</p></li>
+                <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
             </ul>
         </nav>
     </head>
@@ -28,13 +28,21 @@
             <h4>Sumário</h4>
             <ul id="listasumario">
                 <li>
-                    <h5><a href="#introdução">Introdução</a><h5>
+                    <h5 class="sump"><a href="#introdução">Introdução</a><h5>
                 </li>
                 <li>
-                    <h5><a href="#barreiras">Barreiras para um site acessivel</a></h5>
+                    <h5 class="sump"><a href="#barreiras">Barreiras para um site acessivel</a></h5>
+                </li>
+                <li>
+                    <h5 class="sump">&nbsp;&nbsp;<a href="#visão">Barreiras para pessoas com cegueira ou baixa visão</a></h5>
+                </li>
+                <li>
+                    <h5 class="sump">&nbsp;&nbsp;<a href="#daltonismo">Barreiras para pessoas com daltonismo</a></h5>
+                </li>
+                <li>
+                    <h5 class="sump">&nbsp;&nbsp;<a href="#tdah">Barreiras para pessoas com TDAH</a></h5>
                 </li>
             </ul>
-            <p>
         </div>
         <div id="content">
             <h2 id="introdução">Introdução</h2>
@@ -105,13 +113,35 @@
                 linearidade do site ou a necessita de buscar uma explicação externa para um termo faz com que o foco
                 de uma pessoa com esse transtorno se desvie o que a atrapalha de terminar sua leitura.
             </p><br>
-            <img src="imagens/tdah.jpg" height="50%" width="60%" alt="Mulher trabalhando em seu computador, em sua cabeça
+            <img src="imagens/tdah.png" height="50%" width="60%" alt="Mulher trabalhando em seu computador, em sua cabeça
             ela pensa em diversas coisas, menos sobre o trabalho"><br>
-            <a href="tdah.html">Ver mais sobre acessibilidade TDAH</a>
-            <a href="#sumario">Retornar ao sumário</a>
+            <a href="tdah.html">Ver mais sobre acessibilidade para TDAH</a>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h3 id="intelectual">Deficiência Intelectual</h3>
+            <p class="firstp paragrafo">
+                A Deficiência Intelectual, antigamente conhecida como deficiência mental, é um disturbido do neurodesenvolvimento que afeta a habilidade de interação social.
+                comunicação, raciocínio lógico, entre outras. Além disso, prejudica o aprendizado, a atenção, a memória e a linguagem da criança. Um dos tipos mais comuns
+                é a Sindrome de Down.
+            </p><br><br>
+            <p class="paragrafo">
+                Individuos com essa sindrome apresentam funcionamento intelectual inferiores a média e área cognitiva afetadas, de certa maneira as dificuldade enfrentadas assemelham-se
+                as enfretadas por pessoas com TDAH, uma vez que dificuldade de atenção é compartilhada, mas é preciso considerar as dificuldades de compreensão e memória a mais.
+            </p><br>
+            <img src="imagens/intelectual.png" height="50%" width="60%" alt="Menina com Sindrome de Down pintando"><br>
+            <a href="intelectual.html">Ver mais sobre acessibilidade para Deficientes Intelectuais</a>
+            <a href="#sumario">Retornar ao sumário</a><br>
         </div>
     </div>
     <script>
+        function daltonismo(){
+            location.href = "daltonismo.html";
+        }
+        function intelectual(){
+            location.href = "intelectual.html";
+        }
+        function tdah(){
+            location.href = "tdah.html";
+        }
         function visao(){
             location.href = "visao.html";
         }

@@ -66,6 +66,7 @@ body{
 
 #listasumario{
     list-style-type: none;
+    margin: 5px;
 }
 
 #content{
