@@ -11,10 +11,10 @@
     <head>
         <nav id="nav">
             <div>
-                <h1 id="name" class="navp">Tipos de Acessibilidade</h1>
+                <h1 id="name" class="navp" onclick="home()">Tipos de Acessibilidade</h1>
             </div>
             <ul id="listanav">
-                <li><p class="navp" onclick="tdah()()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="tdah()">Perspectiva de uma pessoa com TDAH</p></li>
                 <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
                 <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
                 <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
@@ -42,6 +42,9 @@
                 <li>
                     <h5 class="sump">&nbsp;&nbsp;<a href="#tdah">Barreiras para pessoas com TDAH</a></h5>
                 </li>
+                <li>
+                    <h5 class="sump">&nbsp;&nbsp;<a href="#intelectual">Barreiras para pessoas com Deficiência Intelectual</a></h5>
+                </li>
             </ul>
         </div>
         <div id="content">
@@ -49,8 +52,7 @@
             <p class="firstp paragrafo">Você já tentou acessar o seu navegador sem utilizar o seu mouse ? ou já tentou acessar com seus olhos fechados ? Eu tenho certeza que se você respondeu sim, você muito provavelmente
                 não consegui e voltou a navegar normalmente como se nada tivesse ocorrido, mas você já pensou que existem pessoas que não tem essa opção e que também precisam e tem
                 o direito de navegar pela internet também. 
-            </P>
-            <br>
+            </P><br>
             <p class="paragrafo">
                 Você deve estar pensando para sí mesmo, que o grupo de pessoas que possuem tais dificuldades são poucas, mas pelo contrário segundo o censo do IBGE de 2010, há 
                 aproximadamente 45 milhões de pessoas que apresentam pelo menos uma das deficiências listadas do cabeçalho, esse número representa 23,9% da população, a internet
@@ -133,6 +135,9 @@
         </div>
     </div>
     <script>
+        function home(){
+            location.href = "SitePrincipal.html";
+        }
         function daltonismo(){
             location.href = "daltonismo.html";
         }

@@ -57,7 +57,7 @@ body{
     background-color: snow;
     text-align: left;
     align-self: left;
-    height: 60vh;
+    height: 50%;
     width: 20%;
     border: 1px solid #000;
     border-top-right-radius: 2%;
@@ -67,6 +67,7 @@ body{
 
 #listasumario{
     list-style-type: none;
+    line-height: 2;
     margin: 5px;
 }
 

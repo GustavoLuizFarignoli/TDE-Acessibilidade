@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
     <link rel="stylesheet" href="Css/visao.css">
     <title>Trazendo acessibilidade para sites web</title>
 </head>
@@ -11,13 +12,13 @@
     <head>
         <nav id="nav">
             <div>
-                <h1 id="name">Tipos de Acessibilidade</h1>
+                <h1 id="name" class="navp" onclick="home()">Tipos de Acessibilidade</h1>
             </div>
             <ul id="listanav">
-                <li>Perspectiva de uma pessoa com TDAH</li>
-                <li>Perspectiva de um Deficiente Intelectual</li>
-                <li>Perspectiva de um Deficientes Visual</li>
-                <li>Perspectiva de um pessoa com Daltonismo</li>
+                <li><p class="navp" onclick="tdah()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
+                <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
             </ul>
         </nav>
     </head>
@@ -28,16 +29,16 @@
             <h4>Sumário</h4>
             <ul id="listasumario">
                 <li>
-                    <h5 class="sump"><h5>
+                    <h5 class="sump"><a href="#barreiras">Quais sãos as Barreiras</a><h5>
                 </li>
                 <li>
-                    <h5 class="sump"></h5>
+                    <h5 class="sump"><a href="#leitor">Leitores de tela e os cabeçalhos</a></h5>
                 </li>
                 <li>
-                    <h5 class="sump"></h5>
+                    <h5 class="sump"><a href="#links">Clareza dos links</a></h5>
                 </li>
                 <li>
-                    <h5 class="sump"></h5>
+                    <h5 class="sump"><a href="#imagens">Tratando imagens</a></h5>
                 </li>
                 <li>
                     <h5 class="sump"></h5>
@@ -45,8 +46,8 @@
             </ul>
         </div>
         <div id="content">
-            <h2>Quais Barreiras estamos solucionando ?</h2>
-            <p class="firstp paragrafo">
+            <h2 id="barreiras">Quais Barreiras estamos solucionando ?</h2>
+            <p class="paragrafo">
                 As principais barreiras que estamos enfrentando por pessoas com 
                 baixa visão ou com cegueira são:
             </p>
@@ -58,13 +59,76 @@
                 <li style="text-align: left;">Links mal descritos;</li>               
                 <li style="text-align: left;">Tabelas que não fazem sentido quando lidas linearmente;</li>
                 <li style="text-align: left;">Formulários sem sequência lógica;</li>
-                <li style="text-align: left;">Campos de formulário sem descrição adequada;</li>
-                <li style="text-align: left;">Arquivos pouco acessíveis;</li>
                 <li style="text-align: left;">Contraste de cores ruim;</li>
                 <li style="text-align: left;">Fonte de letra com serifa ou decorada;</li>
                 <li style="text-align: left;">Conteúdos que perdem sua funcionalidade quando ampliados.</li>
-            </ul>
+            </ul><br>
+            <p class="paragrafo">Para solucinar alguns desses problemas é preciso entrar em conhecimentos teoricos da linguagem HTML de programação(
+                abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto") que é usada pela grande maioria de sites
+                que estão na internet atualmente, existem algumas tags (elementos que compoem um código escrito em HTML) que auxiliam o programador a fornecer acessibilidade em
+                seu site. nos parágrafos vamos explicar as principais adequações de HTML para as barreiras listadas acima.
+            </P>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="leitor">Qual a relação entre o Leitor de Tela e o Código HTML ?</h2>
+            <p class="firstp paragrafo">O leitor de tela e outros recursos de Tecnologia Assistiva interpretam o código HTML, seus elementos e semântica, Dessa maneira é importante
+                que o código do site esteja bem organizado e semanticamente correto. Um exemplo é a utilização dos cabeçalhos (titulos do HTML) que são representadas pelas tags de
+                &lth1&gt até &lth6&gt, sendo que o &lth1&gt deve ser utilizado como título principal e por isso só deve existir um elemento desses por página. É importante que
+                os cabeçalhos sejam utilizados sem pular niveis, por exemplo não se deve usar o nível 3 sem antes utilizar o nível 1 e 2 e assim por diante, o motivo disso ? Imaginei
+                que alguém lhe entrega a edição número 3, você provavelmente iria procurar pelas edições número 1 e 2 para ler, mas como essas edições não existem você procuraria
+                sem resultado nenhum. 
+            </P><br>
+            <img src="imagens/heading-tags.jpg" height="50%" width="60%" alt="Esquema que mostra todos os níveis de cabeçalho do HTML"><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="links">Clareza nos Links</h2>
+            <p class="firstp paragrafo">Uma das maneiras desse navegar em um site é através dos links utilizando a tecla TAB do teclado, e assim que chegar até o link desejado
+                pode acessá-lo clicando a tecla ENTER, isso permite uma navegação diretamente pelo teclado sem a necesidade do mouse, porém o problema ao se utilizar um leitor
+                de tela e esse método de navegação o leitor irá ler apenas o texto do link e quando se tem link com apenas "Clique aqui" ou "Quero saber mais" não há muito
+                valor a ser tirado deles, por isso é importante que os textos dos links precisam dizer claramente o que eles significam como "Ver mais sobre as floresta de eucalipto"
+                por exemplo ou que o proprio nome da própria notícia seja o título do link.
+            </P><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="imagens">Como utilizar imagens</h2>
+            <p class="paragrafo">As imagens podem ser categorizadas em duas categorias:</p><br>
+            <ul style="align-self:left; list-style:square; font-size:large;">
+                <li style="text-align: left;">Imagens com contéudo</li>
+                <li style="text-align: left;">Imagens decorativas</li>
+            </ul><br>
+            <p class="paragrafo">As imagens decorativas são aquelas utilizadas apenas para decorar a página ou parte delas como por exemplo um botão com um icone ao lado e essas
+                não precisam de descrição uma vez que não adicionam nenhum valor além do que o elemento que estão decorando. Já as imagens com conteúdo como fotos e infográficos
+                acrescentam valor e por isso precisam de uma descrição, isso pode ser feito atráves do atributo alt das imagens, essa descrição so aparece para os leitores de Tela
+                ou quando não foi possível carrega-lá, porém caso a descrição dessa imagem seja longo demais a solução é adicionar um parágrafo logo abaixo ou um link que leve para
+                explicação externa.
+            </p><br>
+            <p class="paragrafo">Para se descrever uma imagem é importante ser objetivo, descrevendo apenas aquilo que for necessário, ser claro, não adianta ser objetivo e construir
+                uma descrição que não faça sentido é preciso que a descrição seja direta ao ponto e traga o contexto da imagem, se ambos os pilares forem utilizados sem dúvidas a 
+                descrição da imagem será boa e transmitiria o valor que a própria imagem transmite.
+            </p><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="final">Conclusão</h2>
+            <p class="firstp paragrafo">
+                Utilizando as técnicas descritas acima já se pode solucinar as principais barreiras enfrentadas por esse grupo, as outras barreiras descritas no inicio também
+                podem ser solucionados utilizando soluções semelhantes as descritas acima.
+            </p>
+            <a href="#sumario">Retornar ao sumário</a><br><br>
+
         </div>
     </div>
+    <script>
+        function home(){
+            location.href = "SitePrincipal.html";
+        }
+        function daltonismo(){
+            location.href = "daltonismo.html";
+        }
+        function intelectual(){
+            location.href = "intelectual.html";
+        }
+        function tdah(){
+            location.href = "tdah.html";
+        }
+        function visao(){
+            location.href = "visao.html";
+        }
+    </script>
 </body>
 </html>
