@@ -1,1 +1,86 @@
-<h1>Intelectual</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Deficiente Intelectual</title>
+</head>
+<body>
+    <head>
+        <nav id="nav">
+            <div>
+                <h1 id="name" class="navp" onclick="home()">Tipos de Acessibilidade</h1>
+            </div>
+            <ul id="listanav">
+                <li><p class="navp" onclick="tdah()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
+                <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
+            </ul>
+        </nav>
+    </head>
+    <h2 id="titulo">Acessibilidade No Mundo Virtual</h2>
+    <hr>
+    <div id="corpo">
+        <div id="sumario">
+            <h4>Sumário</h4>
+            <ul id="listasumario">
+                <li>
+                    <h5 class="sump"><a href="#barreiras">Quais sãos as Barreiras</a><h5>
+                </li>
+                <li>
+                    <h5 class="sump"><a href="#cuidado">Cuidado com Aúdio e Imagens</a></h5>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2 id="barreiras">Quais Barreiras estamos solucionando ?</h2>
+            <p class="paragrafo">
+                As principais barreiras que são enfretadas por pessoas com 
+                Deficiência intelectual são:
+            </p>
+            <ul style="align-self:center; list-style:square; font-size:large;">
+                <br>
+                <li style="text-align: left;">Falta de clareza e consistência na organização das páginas;</li>
+                <li style="text-align: left;">Utilização de linguagem complexa sem necessidade;</li>
+                <li style="text-align: left;">Parágrafos muito extensos;</li>
+                <li style="text-align: left;">Abreviaturas e palavras incomuns sem uma explicação;</li>               
+                <li style="text-align: left;">Imagens complexas sem explicação textual;</li>
+                <li style="text-align: left;">Uso de imagens "piscantes” ou áudio em frequência que cause desconforto.</li>
+            </ul><br>
+            <p class="paragrafo">Algumas das barreiras citadas acima são compartilhada com as barreiras para pessoas com transtorno de déficit de atenção,
+                como a utilização de linguagem complexa de mais ou abreviaturas sem explicação, e por isso não serão repitidas aqui. Abaixo vamos ver a barreiras mais relevante
+                para esse grupo, é importante notar que ela não precisa de nenhuma alteração de códigos, mas sim um questão de cuidado.
+            </P><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="cuidado">Cuidado com Aúdio e Imagens</h2>
+            <p class="firstp paragrafo">Principalmente as crianças com deficiência intelectual, são extremamente sensíveis a luzes e a sons, por causa da dificuldade de compreensão
+                as cores e o sons são as primeiras coisas a destrair-las, mas também são os primeiros a afasta-lás, por mais que não saiba o motivo exato do desconforto a crianças
+                sabe que foi por causa daquilo que ela se sentiu desconfortavél e por isso ela vai parar de usar. Nesse ponto não difere muito de uma criança com medo de um trovão,
+                por isso e por outros tipos de dificuldades 
+            </P><br>
+            <img src="imagens/incomodada.jpg" height="40%" width="50%" alt="moça com dor de cabeça olhando para o celular"><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+        </div>
+    </div>
+    <script>
+        function home(){
+            location.href = "SitePrincipal.html";
+        }
+        function daltonismo(){
+            location.href = "daltonismo.html";
+        }
+        function intelectual(){
+            location.href = "intelectual.html";
+        }
+        function tdah(){
+            location.href = "tdah.html";
+        }
+        function visao(){
+            location.href = "visao.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,1 +1,94 @@
-<h1>Daltonismo</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Daltonismo</title>
+</head>
+<body>
+    <head>
+        <nav id="nav">
+            <div>
+                <h1 id="name" class="navp" onclick="home()">Tipos de Acessibilidade</h1>
+            </div>
+            <ul id="listanav">
+                <li><p class="navp" onclick="tdah()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
+                <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
+            </ul>
+        </nav>
+    </head>
+    <h2 id="titulo">Acessibilidade No Mundo Virtual</h2>
+    <hr>
+    <div id="corpo">
+        <div id="sumario">
+            <h4>Sumário</h4>
+            <ul id="listasumario">
+                <li>
+                    <h5 class="sump"><a href="#barreiras">Quais sãos as Barreiras</a><h5>
+                </li>
+                <li>
+                    <h5 class="sump"><a href="#enfatizar">Como enfatizar um texto além de cores</a></h5>
+                </li>
+                <li>
+                    <h5 class="sump"><a href="#contraste">Um Bom Contraste de cores</a></h5>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2 id="barreiras">Quais Barreiras estamos solucionando ?</h2>
+            <p class="paragrafo">
+                As principais barreiras que são enfrentadas por pessoas com 
+                daltonismo são:
+            </p>
+            <ul style="align-self:center; list-style:square; font-size:large;">
+                <br>
+                <li style="text-align: left;">Cor utilizada como único recurso para enfatizar o texto;</li>
+                <li style="text-align: left;">Contraste inadequado entre cores de fonte e fundo.</li>
+            </ul><br>
+            <p class="paragrafo">Para solucinar a maioria desses problemas precisa de alguns conhecimento tecnico de programação, mas que necessitam ser acompanhado de atenção
+                ao design e de interface do site para serem resolvidas.
+            </P><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="enfatizar">Enfatizando um texto</h2>
+            <p class="firstp paragrafo">Existem algumas maneiras de enfatizar textos além de utilizar cores, métodos esses que não diferem da maneira de destacar algo dentro de um
+                documento de texto, assim como no word ou bloco de notas com ajuda de códigos Css ("Cascading Style Sheets" linguagem utilizada para adicionar estilos a páginas web)
+                dentro do seu site. Trocando as cores, você pode utilizar a função "font-weight:bold" para adicionar textos em negrito ou "text-decoration:underline" para texto 
+                sublinhados ou até "font-style: italic" em itálico por exemplo.
+            </P><br>
+            <img src="imagens/enfatizar.jpg" height="40%" width="50%" alt="demonstraçaõ do texto em negrito, itálico e sublinhado"><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="contraste">Contraste de Cores</h2>
+            <p class="firstp paragrafo">Não é só escolher cores com bom contraste, também é preciso tomar cuidado com imagens utilizadas de plano de fundo por que isso pode complicar a
+                visualização do site. A relação de contraste pode ser encontrada dividindo-se o valor da luminosidade relativa da cor mais clara de um dos planos pelo valor da luminosidade relativa da cor mais escura do 
+                outro plano, para testar se há um bom constrate no seu site existem sites gratuitos para isso como, o 
+                <a href="https://juicystudio.com/services/luminositycontrastratio.php">luminositycontrastratio,</a> mais o importante é sempre evitar constraste que envolvem as cores
+                verde e vermelha, uma vez que são as cores mais comuns que pessoas com daltonismo não são capazes de enxergar corretamente.
+            </p>
+            <img src="imagens/contrastecores.gif" height="40%" width="50%" alt="imagem animado sobre o contraste entre vermelho, verde e outras cores para daltônicos"><br>
+            <a href="gif.html">Explicação sobre a imagem animada</a>
+            <a href="#sumario">Retornar ao sumário</a><br>
+        </div>
+    </div>
+    <script>
+        function home(){
+            location.href = "SitePrincipal.html";
+        }
+        function daltonismo(){
+            location.href = "daltonismo.html";
+        }
+        function intelectual(){
+            location.href = "intelectual.html";
+        }
+        function tdah(){
+            location.href = "tdah.html";
+        }
+        function visao(){
+            location.href = "visao.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,1 +1,97 @@
-<h1>TDAH</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>TDAH</title>
+</head>
+<body>
+    <head>
+        <nav id="nav">
+            <div>
+                <h1 id="name" class="navp" onclick="home()">Tipos de Acessibilidade</h1>
+            </div>
+            <ul id="listanav">
+                <li><p class="navp" onclick="tdah()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
+                <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
+            </ul>
+        </nav>
+    </head>
+    <h2 id="titulo">Acessibilidade No Mundo Virtual</h2>
+    <hr>
+    <div id="corpo">
+        <div id="sumario">
+            <h4>Sumário</h4>
+            <ul id="listasumario">
+                <li>
+                    <h5 class="sump"><a href="#barreiras">Quais sãos as Barreiras</a><h5>
+                </li>
+                <li>
+                    <h5 class="sump"><a href="#linguagem">Adaptando a linguagem do site</a></h5>
+                </li>
+                <li>
+                    <h5 class="sump"><a href="#sucinto">Seja Breve ao escrever</a></h5>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2 id="barreiras">Quais Barreiras estamos solucionando ?</h2>
+            <p class="paragrafo">
+                As principais barreiras que são enfrentadas por pessoas com 
+                TDAH são:
+            </p>
+            <ul style="align-self:center; list-style:square; font-size:large;">
+                <br>
+                <li style="text-align: left;">Falta de consistência na organização das páginas;</li>
+                <li style="text-align: left;">Falta de coerência na organização do conteúdo;</li>
+                <li style="text-align: left;">Utilização de linguagem complexa sem necessidade;</li>
+                <li style="text-align: left;">Parágrafos muito extensos;</li>               
+                <li style="text-align: left;">Utilização de fontes com serifa ou decoradas;</li>
+                <li style="text-align: left;">Falta de clareza no conteúdo ou de exemplos que facilitem a compreensão;</li>
+                <li style="text-align: left;">Uso de imagens "piscantes” ou conteúdo que possa desviar a atenção do usuário;</li>
+                <li style="text-align: left;">Texto justificado.</li>
+            </ul><br>
+            <p class="paragrafo">Para solucinar a maioria desses problemas não é preciso muito conhecimento tecnico de programação, mas sim um pouco de organização, aqui vamos
+                mostrar a soluções para alguns deles e os motivos deles serem um problema.
+            </P><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="linguagem">Adaptando sua linguagem</h2>
+            <p class="firstp paragrafo">Ao construir o seu site você precisa conhecer o seu público para saber qual o tipo de linguagem você deve empregar, aqui esse conceito ainda se
+                aplica, uma vez que somente por que uma pessoa possui TDAH não significa que ela não vai entender termos complexos isso vai depender de pessoa para pessoa, mas seja um
+                termo que ele não entenda isso a levará, muitas vezes, a pesquisar e a partir do momento que ele retorna ao buscador a possibilidade dela começar a buscar outra coisa 
+                não relacionada com o site. Evite utilizar termos complexos, se não for possível garanta que ele é conhecido pelo seu público.
+            </P><br>
+            <img src="imagens/complexo.png" height="40%" width="20%" alt="Criança confusa enquanto le um livro"><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+            <h2 id="sucinto">Seja Breve</h2>
+            <p class="firstp paragrafo">A maior dificuldade para construir um site abrangente para pessoas com transtornos de atenção, como o TDAH, é exatamente o que se imagina,
+                prender a atenção do leitor, por isso o melhor é ser sucinto, não só pessoas com TDAH que se sentem desencorajadas a ler muito textos, então é só unir o útil ao
+                agradável quanto menos texto para passar aquela mensagem o melhor.
+            </P><br>
+            <img src="imagens/menosemais.png" height="40%" width="50%" alt="frase de Rafael Thaddeu &quotmenos é mais&quot"><br>
+            <a href="#sumario">Retornar ao sumário</a><br>
+        </div>
+    </div>
+    <script>
+        function home(){
+            location.href = "SitePrincipal.html";
+        }
+        function daltonismo(){
+            location.href = "daltonismo.html";
+        }
+        function intelectual(){
+            location.href = "intelectual.html";
+        }
+        function tdah(){
+            location.href = "tdah.html";
+        }
+        function visao(){
+            location.href = "visao.html";
+        }
+    </script>
+</body>
+</html>

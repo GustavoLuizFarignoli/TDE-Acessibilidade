@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Daltonismo</title>
+</head>
+<body>
+    <head>
+        <nav id="nav">
+            <div>
+                <h1 id="name" class="navp" onclick="home()">Tipos de Acessibilidade</h1>
+            </div>
+            <ul id="listanav">
+                <li><p class="navp" onclick="tdah()">Perspectiva de uma pessoa com TDAH</p></li>
+                <li><p class="navp" onclick="intelectual()">Perspectiva de um Deficiente Intelectual</p></li>
+                <li><p class="navp" onclick="visao()">Perspectiva de um Deficientes Visual</p></li>
+                <li><p class="navp" onclick="daltonismo()">Perspectiva de um pessoa com Daltonismo</p></li>
+            </ul>
+        </nav>
+    </head>
+    <h2 id="titulo">Acessibilidade No Mundo Virtual</h2>
+    <hr>
+    <div id="corpo" style="align-items:center;">
+        <div id="content">
+            <img src="imagens/contrastecores.gif" height="60%" width="70%" alt="imagem animado sobre o contraste entre vermelho, verde e outras cores para daltônicos"><br>
+            <p class="firstp paragrafo">A imagem acima mostra o constrates em varias cores com a cor verde e mostrando como é a visão com alguém com daltonismo dos seguintes contraste
+            </P><br>
+            <ul style="align-self:center; list-style:square; font-size:large;">
+                <br>
+                <li style="text-align: left;">Verde e Vermelho;</li>
+                <li style="text-align: left;">Verde e Marrom;</li>
+                <li style="text-align: left;">Azul e Roxo;</li>
+                <li style="text-align: left;">Verde Claro e Amarelo;</li>               
+                <li style="text-align: left;">Verde e Cinza;</li>
+                <li style="text-align: left;">Verde e Azul;</li>
+                <li style="text-align: left;">Verde e Preto;</li>
+                <li style="text-align: left;">Azul e Cinza.</li>
+            </ul><br>
+        </div>
+    </div>
+    <script>
+        function home(){
+            location.href = "SitePrincipal.html";
+        }
+        function daltonismo(){
+            location.href = "daltonismo.html";
+        }
+        function intelectual(){
+            location.href = "intelectual.html";
+        }
+        function tdah(){
+            location.href = "tdah.html";
+        }
+        function visao(){
+            location.href = "visao.html";
+        }
+    </script>
+</body>
+</html>

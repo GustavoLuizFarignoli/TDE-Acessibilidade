@@ -7,14 +7,14 @@
 }
 
 body{
-    background-color: ghostwhite
+    background-color: #f8f8ff
 }
 
 #nav{
     height: 70px;
     width: 100%;
     padding: 15px;
-    background-color: #2983EF;
+    background-color: #0100FB;
     display: flex;
     justify-content: space-between;
     align-items: center;
